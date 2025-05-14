@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+
+  <style>
+    /* General Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      background: url('background.jpg') no-repeat center center fixed; /* Replace 'background.jpg' with your image path */
+      background-size: cover;
+    }
+
+    /* Header */
+    h1 {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 2.5em;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.8); /* Saffron with transparency */
+        padding: 20px;
+        color: #3680e6; /* Ashoka Chakra Blue */
+        text-align: center;
+        border-bottom: 5px solid #0047ab;
+    }
+
+    /* Login Container */
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Form Styling */
+    h3 {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-control {
+      width: 90%;
+      padding: 10px;
+      font-size: 1em;
+      color: #000000;
+      background-color: #ffffff;
+      border: 1px solid #555555;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: #ffffff;
+      background-color: #e0e0e0;
+    }
+
+    /* Button Styling */
+    .btn {
+      display: inline-block;
+      width: 90%;
+      padding: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #000000;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #444444;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .container {
+        margin: 20px auto;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <h1>Decentralized Voting Using NANO Blockchain</h1>
+
+  <!-- Login Form Section -->
+  <div class="container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="voter-id">
+          <h3>Voter ID</h3>
+        </label>
+        <input type="text" class="form-control" id="voter-id" name="voter-id" placeholder="Voter ID">
+      </div>
+      <div class="form-group">
+        <label for="password">
+          <h3>Password</h3>
+        </label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+      </div>
+      <button type="submit" class="btn">
+        <b>Login</b>
+      </button>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="../js/login.js" type="module"></script>
+</body>
+
+</html>
